@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="coursera2 solution style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <section class="menu-container">
+        <div class="menu-section">
+            <h2 class="menu-title">Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="menu-section">
+            <h2 class="menu-title">Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="menu-section">
+            <h2 class="menu-title">Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+</body>
+</html>
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 800px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Menu Section */
+.menu-section {
+    width: 33.33%; /* Adjust for equal width sections on desktop */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Menu Section Title */
+.menu-title {
+    background-color: #e0e0e0; /* Section title background color */
+    color: #000; /* Section title text color */
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.25em; /* Adjust title size */
+}
+
+/* Responsive Media Queries */
+
+/* Tablet View (768px - 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .menu-container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .menu-section {
+        width: 50%; /* Adjust width for two sections per row */
+        margin-bottom: 0; /* Remove bottom margin on last section */
+    }
+
+    .menu-section:nth-child(3) { /* Target the third section */
+        margin-bottom: 20px; /* Add bottom margin to last section */
+    }
+}
+
+/* Mobile View (767px and below) */
+@media screen and (max-width: 767px) {
+    .
